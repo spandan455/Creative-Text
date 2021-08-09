@@ -4,7 +4,10 @@
 
 #text{
     position: relative;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    /* background: linear-gradient(135deg , rgb(0, 132, 255) , rgb(0, 255, 170));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
     font-weight: 700;
     font-size: 12em;
     font-family: Ubuntu;
@@ -12,6 +15,7 @@
     letter-spacing: 2px;
     text-align: center;
     transform: rotate(-28deg) skew(25deg);
+    
 }
 
 *{
@@ -24,7 +28,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f1f1f1;
+    background: linear-gradient(135deg , rgb(0, 119, 255) , rgb(0, 255, 136));
     overflow: hidden;
 
 
