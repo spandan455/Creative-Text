@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="text" contenteditable="true"> 3D Text</div>
+    <div id="text2" class="text2" contenteditable="true"> 3D Text</div>
     <script type="text/javascript">
     var text = document.getElementById('text')
     var shadow = '';
@@ -18,6 +19,26 @@
 
     }
     text.style.textShadow = shadow;
+
+    function myFunction(x) {
+  if (x.matches) { // If media query matches
+    var text2 = document.getElementById('text2')
+    var shadow = '';
+    for(var i = 0;i < 30;i++)
+    {
+        shadow +=(shadow? ',':'')+ -i*1+'px '+ i*1+'px 0 #d9d9d9'
+
+    }
+    text2.style.textShadow = shadow;
+  } else {
+   
+  }
+
+}
+
+var x = window.matchMedia("(max-width: 750px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
     </script>
 </body>
 </html>

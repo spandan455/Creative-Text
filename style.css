@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 
+@media screen and (max-width:750px) {
+    #text2{
+        color: white;
+    }
+
+    #text{
+        display: none;
+    }
+}
+
+:root{
+    --font-size :12em;
+}
+
 #text{
     position: relative;
     color: rgb(255, 255, 255);
@@ -9,13 +23,36 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; */
     font-weight: 700;
-    font-size: 12em;
+    font-size: var(--font-size);
     font-family: Ubuntu;
     line-height: 0.9em;
     letter-spacing: 2px;
     text-align: center;
     transform: rotate(-28deg) skew(25deg);
+    margin-left: 20%;
+    margin-right: 20%;
+    z-index: 3;
+}
+
+#text2{
+    position: absolute;
+    /* background: linear-gradient(135deg , rgb(0, 132, 255) , rgb(0, 255, 170));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    font-weight: 700;
+    font-size: 5em;
+    font-family: Ubuntu;
+    line-height: 0.9em;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: rotate(-28deg) skew(25deg);
+    margin-left: 20%;
+    margin-right: 20%;
     
+}
+
+.text2{
+    color: transparent;
 }
 
 *{
@@ -28,8 +65,10 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg , rgb(0, 119, 255) , rgb(0, 255, 136));
+    background:center/cover no-repeat linear-gradient(135deg , rgb(0, 119, 255) , rgb(0, 255, 136));
     overflow: hidden;
+    width: 100vw;
+    
 
 
 }
